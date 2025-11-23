@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.billing-details, .payment-details {
+    width: 45%;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    color: #4b6cb7;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 0.9em;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus {
+    border: 1px solid #4b6cb7;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder {
+    color: #999;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-50 {
+    width: 48%;
+}
+
+.card-icons i {
+    font-size: 2.2em;
+    margin-right: 10px;
+    color: #4b6cb7;
+}
+
+.card-icons i:hover {
+    color: #f77f00;
+}
+
+.btn {
+    background: linear-gradient(45deg, #4b6cb7, #182848);
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #f77f00, #ffaf1d);
+}
+
+.btn:active {
+    transform: scale(0.98);
+    background: linear-gradient(45deg, #c46700, #e59300);
+}
+
+.container {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+input[type="text"], input[type="email"], select {
+    background: linear-gradient(135deg, #fff, #f7f7f7);
+    color: #333;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus {
+    background-color: #fff;
+}

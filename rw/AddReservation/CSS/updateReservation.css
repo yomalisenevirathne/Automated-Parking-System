@@ -1,0 +1,147 @@
+*,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow-y: auto; /* Ensure the entire page can scroll */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Fix the background in place */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://images.pexels.com/photos/18108314/pexels-photo-18108314/free-photo-of-modern-expensive-cars-in-the-garage.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); 
+    z-index: -1;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    margin: 50px auto; /* Center the form on the page */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Optional blur effect inside the form */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 30px;
+    z-index: 1; /* Ensure the form is above the blurred background */
+}
+
+form * {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #545353;
+}
+
+button {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8ca9e1;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #3d64ab;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    form h3 {
+        font-size: 20px;
+    }
+
+    input {
+        height: 35px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 95%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    form h3 {
+        font-size: 18px;
+    }
+
+    input {
+        height: 35px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
